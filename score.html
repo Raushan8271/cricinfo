@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>score</h1>
+
+    <script>
+        async function score() {
+            try {
+                let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2&unique_id=1254064')
+                let data = await req.json()
+                    //console.log(data)
+            } catch (e) {
+                console.log(e)
+            }
+        }
+        score()
+        async function ipl() {
+            try {
+                let req = await fetch('https://cricapi.com/api/matches/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2')
+                let data = await req.json()
+                    //console.log(data.matches)
+                let alldata = data.matches
+                alldata.forEach(element => {
+                    if (element.type == 'Twenty20') {
+                        console.log(element)
+                    }
+                });
+
+            } catch (e) {
+                console.log(e)
+            }
+        }
+        ipl()
+        async function match() {
+            try {
+                let req = await fetch('https://cricapi.com/api/matches/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2')
+                let data = await req.json()
+                console.log(data)
+            } catch (e) {
+                console.log(e)
+            }
+        }
+        match()
+    </script>
+</body>
+
+</html>
