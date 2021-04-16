@@ -1,0 +1,44 @@
+#main{
+    background-color:solid #ffffff;
+     width: 70%;
+     margin: 20px auto 20px auto;
+     min-height: 200px;
+     height: auto;
+     border-radius: 2%;
+     border: 2px solid black;
+    
+ }
+ .inner{
+     width: 32.8%;
+    
+     margin: auto;
+     height: 80px;
+     display: flex;
+     cursor: pointer;
+ }
+ .inner:hover{
+     color: #03a9f4;
+     background-color: rgb(236, 233, 233);
+ }
+ #after,#womens_team,#ipl_team{
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+    
+    
+     min-height: 200px;
+     height: auto;
+ }
+ .imgss{
+     height: 48px;
+     width: 48px;
+     align-items: center;
+     margin: auto 10px auto 20px;
+
+    
+ }
+ .country_name{
+     
+     margin: auto;
+     margin-left: 0px;
+ }
