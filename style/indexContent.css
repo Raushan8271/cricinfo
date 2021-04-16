@@ -1,0 +1,52 @@
+#content {
+    width: 85%;
+    height: auto;
+    min-height: 1500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#rightContent {
+    width: 270px;
+    height: auto;
+    min-height: 600px;
+    margin: 10px 10px;
+}
+
+#rightContent>div>div>li>a {
+    text-decoration: none;
+    color: #535354;
+    font-size: .76rem;
+}
+
+#rightContent>div>div>li:hover {
+    background-color: rgb(237, 233, 233);
+    cursor: pointer;
+}
+
+#rightContent>div {
+    box-shadow: 2px 2px 2px 2px rgb(221, 219, 219);
+}
+
+li {
+    list-style: none;
+    padding: 8px 16px;
+}
+
+#newsContent {
+    width: 612px;
+    height: auto;
+    min-height: 600px;
+    border: 1px solid black;
+    margin: 10px 10px;
+}
+
+#leftContent {
+    width: 300px;
+    height: auto;
+    min-height: 600px;
+    border: 1px solid black;
+    margin: 10px 10px;
+}
