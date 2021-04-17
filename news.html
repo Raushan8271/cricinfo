@@ -1,5 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="showdata"></div>
+
+    <script>
+        async function news() {
+            try {
+                let req = await fetch(`https://newsapi.org/v2/top-headlines?q=IPL&apiKey=21539c465b344398940491f499abdc88`)
+                let data = await req.json()
+                console.log(data)
+                show(data)
+            } catch (e) {
+                console.log(e)
+            }
+        }
+        news()
+
+        function show(element) {
+            var showdata = document.getElementById('showdata')
+            let alldata = element.articles
+            alldata.forEach(el => {
+                console.log(el)
+
+                let p = document.createElement('p')
+                let img = document.createElement('img')
+                img.style.width = "150px"
+                img.setAttribute('src', `${el.urlToImage}`)
+                p.innerHTML = `Authore : ${el.author}<br>content : ${el.content}<br> Description : ${el.description}<br>`
+                showdata.append(img, p)
+
+            });
+        }
+    </script>
+</body>
+
+=======
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

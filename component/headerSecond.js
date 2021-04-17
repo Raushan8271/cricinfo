@@ -3,7 +3,7 @@ export function headerSecond() {
     div.setAttribute('id', 'headerSecond')
     div.innerHTML = ` <div id="headerSecond">
     <div style="width: 20%">
-        <a id="logolink" href="./index.html"><img style="width: 140px;height: 20px;padding: 12px 0px 10px 50%;color:white;" src="https://wassets.hscicdn.com/static/images/logo.png" alt=""></a>
+        <a id="logolink" href="./index.html"><img style="width: 140px;height: 20px;padding: 12px 0px 10px 35%;color:white;" src="https://wassets.hscicdn.com/static/images/logo.png" alt=""></a>
     </div>
     <div class="nav_li">
         <ul>
