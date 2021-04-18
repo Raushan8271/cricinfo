@@ -20,7 +20,7 @@ export function headerSecond() {
                     </div>
                 </ul>
             </li>
-            <li><a href="#">Series</a>
+            <li><a href="../series.html">Series</a>
                 <ul>
                     <div class="dropdownbig">
                         <div class="dropdown">
