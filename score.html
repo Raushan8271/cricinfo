@@ -15,14 +15,36 @@
     <script>
         async function score() {
             try {
-                let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2&unique_id=1251578')
+                let req = await fetch('https://cricapi.com/api/matches/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2')
                 let data = await req.json()
                 console.log(data)
             } catch (e) {
                 console.log(e)
             }
         }
-        //score()
+        score()
+        async function score1() {
+            try {
+                let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2&unique_id=1254067')
+                let data = await req.json()
+                console.log(data)
+            } catch (e) {
+                console.log(e)
+            }
+        }
+        score1()
+        async function score2() {
+            try {
+                let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2&unique_id=1254068')
+                let data = await req.json()
+                console.log(data)
+            } catch (e) {
+                console.log(e)
+            }
+        }
+        score2()
+
+        
         async function ipl() {
             try {
                 let req = await fetch('https://hs-consumer-api.espncricinfo.com/v1/pages/match/home?lang=en&seriesId=1251556&matchId=1251578')
@@ -34,7 +56,7 @@
                 console.log(e)
             }
         }
-        ipl()
+        //ipl()
         async function match() {
             try {
                 let req = await fetch('https://hs-consumer-api.espncricinfo.com/v1/global/fastscore/message/base?messageId=lm-1618577887692')
@@ -44,7 +66,7 @@
                 console.log(e)
             }
         }
-        match()
+        //match()
     </script>
 </body>
 
