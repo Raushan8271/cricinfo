@@ -58,6 +58,5 @@ li {
     width: 300px;
     height: auto;
     min-height: 600px;
-    border: 1px solid black;
-    margin: 10px 10px;
+    margin: 0px 10px;
 }
