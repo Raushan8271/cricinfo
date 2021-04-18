@@ -98,6 +98,7 @@
        border-radius: 7px;
        margin: 1%;
        
+       
    }
    .filter>input:hover, .filter>button:hover{
        color:  #439ec9 !important;
