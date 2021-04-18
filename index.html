@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/nav_css.css">
     <link rel="stylesheet" href="./style/indexContent.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/left.css">
+    <link rel="stylesheet" href="./style/headerMain.css">
     <title>Check Live Cricket Scores, Match Schedules, News, Cricket Videos Online | ESPNcricinfo.com</title>
     <link rel="icon" id="titlelogo" type="image/png" href="./image/logo.png">
 </head>
@@ -16,16 +19,47 @@
 <body>
 
     <div id="headerMain">
-        <div id="headermaininner">
+        <div id="headerMainSec">
             <div id="btn">
-                <button>Matches</button>
-                <button>IPL</button>
+                <button onclick="showMatches()">Matches</button>
+                <button onclick="showIPL()">IPL</button>
                 <button>Shield</button>
                 <button>County</button>
                 <button>SA v PAK</button>
             </div>
-
+            <div id="headermaininner">
+                <div id="card1" class="card">
+                    <div id="cardInner">
+                        <div ><h5 style="margin: 0px 15px 0px 0px;color: rgb(0, 0, 0);" id="type">RESULT</h5></div>
+                        <div ><h5 style="margin: 3px 15px 0px 0px;font-size: .7rem;color: rgb(151, 149, 149);" id="vs"><span style="color: black;">T20 .</span> Mumbai Indians vs Sunrisers Hyderabad</h5></div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/mum.png" alt=""><h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teamf">Mumbai</h5></div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/sun.png" alt=""><h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teams">Sunrisers</h5></div>
+                        <div style="width: 100%; background-color: rgb(211, 208, 208);" ><h5 style="margin: 5px 15px 0px 0px;font-size: .7rem;" id="teams">Mumbai Indians won the match</h5></div>
+                    </div>
+                </div>
+                <div id="vr1" class="verticalLine"></div>
+                <div id="card2" class="card">
+                    <div id="cardInner">
+                        <div ><h5 style="margin: 0px 15px 0px 0px;color: rgb(31, 17, 17);" id="type1">LIVE</h5></div>
+                        <div ><h5 style="margin: 3px 15px 0px 0px;font-size: .7rem;color: rgb(151, 149, 149);" id="vs"><span style="color: black;">T20 .</span> RCB vs KKR</h5></div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/rcb.png" alt=""><h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teamf1"></h5></div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/kol.png" alt=""><h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teams1"></h5></div>
+                        <div style="width: 100%; background-color: rgb(211, 208, 208);" ><h5 style="margin: 5px 15px 0px 0px;font-size: .7rem;" id="teams1">Match is LIVE</h5></div>
+                    </div>
+                </div>
+                <div id="vr2" class="verticalLine"></div>
+                <div id="card3" class="card">
+                    <div id="cardInner">
+                        <div ><h5 style="margin: 0px 15px 0px 0px;color: rgb(36, 26, 26);" id="type2">LIVE</h5></div>
+                        <div ><h5 style="margin: 3px 15px 0px 0px;font-size: .7rem;color: rgb(151, 149, 149);" id="vs"><span style="color: black;">T20 .</span> Delhi Capitals vs Punjab Kings</h5></div>
+                        <div class="iplTeamName" ><img class="iplLogo" src="./image/ipl_team_logo/del.png" alt=""><h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teamf2"></h5></div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/pun.png" alt=""><h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teams2"></h5></div>
+                        <div style="width: 100%; background-color: rgb(211, 208, 208);" ><h5 style="margin: 5px 15px 0px 0px;font-size: .7rem;" id="teams1">Match yet to begin</h5></div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
     <div id="headerSec"></div>
 
@@ -33,17 +67,30 @@
     <div id="content">
         <div id="right"></div>
         <div id="newsContent"></div>
-        <div id="leftContent"></div>
+        <div id="leftContent">
+            <div id="lefttop">
+                <div style="width: 100%;height: auto; border-radius: 7px;">
+                    <h5 style="padding: 15px 16px 0px 16px;">News Headlines</h5>
+                    <hr>
+                    <div style="padding: 5px;">
+                        <li><i class="arrow right"></i><a href="">Abbas takes hat-trick for Hampshire</a></li>
+                        <li><i class="arrow right"></i><a href="">Maroof on indefinite maternity leave</a></li>
+                        <li><i class="arrow right"></i><a href="">Fakhar, Faheem give Pakistan T20I series</a></li>
+                        <li><i class="arrow right"></i><a href="">Stokes set to miss New Zealand Test</a></li>
+                        <li><i class="arrow right"></i><a href="">Babar hails Pak's complete team effort</a></li>
+                        <li><i class="arrow right"></i><a href="">Parkinson's ball-of-the-century contender</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <div id="footer">
-
-
-
-    </div>
+    <div id="footer"></div>
 
     <script type="module" src="./main.js"></script>
+    <script src="./javaScript/newContect.js"></script>
+    <script src="./javaScript/showcard.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
