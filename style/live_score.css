@@ -159,7 +159,7 @@ body{
 }
 
 
-#footer{
+#footer_new{
     width:1600px;
     margin-left: -1100px;
     height: 5vh;
@@ -167,14 +167,14 @@ body{
     padding: 20px 200px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#footer>a{
+#footer_new>a{
     float: left;
     margin: 8px;
     text-decoration: none;
     color: black;
     
 }
-#footer>a:hover{
+#footer_new>a:hover{
     color:#439ec9 !important;  ;
 }
 
