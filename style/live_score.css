@@ -96,10 +96,13 @@ body{
  
 }
 #match_data1>div,#match_data2>div{
+
     width: 428px;
     height: 25vh;
     border: 0.00001rem solid rgb(233, 232, 232);
     float: left;
+    /* display: flex;
+    flex-wrap: wrap; */
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     font-size: 13px;
