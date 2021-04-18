@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <link rel="stylesheet" href="./style/teams.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/nav_css.css">
+    <link rel="stylesheet" href="./style/indexContent.css">
+    <title>Check Live Cricket Scores, Match Schedules, News, Cricket Videos Online | ESPNcricinfo.com</title>
+    <link rel="icon" id="titlelogo" type="image/png" href="./image/logo.png">
+    <link rel="stylesheet" href="./style/teams.css">
 </head>
+
 <body>
-     <div id="main">
-        <h4>POPULAR INTERNATIONAL TEAMS</h4>
+    <div id="headerMain"></div>
+    <div id="headerSec"></div>
+    <div id="main">
+        <h4 style="margin-left: 20px;margin-top: 5px;" >POPULAR INTERNATIONAL TEAMS</h4>
         <div id="after"></div>
     </div>
     <div id="main">
-        <h4>POPULAR WOMENS TEAMS</h4>
+        <h4 style="margin-left: 20px;margin-top: 5px;">WOMENS TEAMS</h4>
         <div id="womens_team"></div>
     </div>
     <div id="main">
-        <h4>IPL 2021 TEAMS</h4>
+        <h4 style="margin-left: 20px;margin-top: 5px;">IPL 2021 TEAMS</h4>
         <div id="ipl_team"></div>
     </div>
     <script type="module">
-        import image_arr from './image/country_imaages/country_img.js'
-   
-        import womens_team_logo from './image/womens_team_logo/womens_team_logo.js'
-            
-       import ipl_team_logo from './image/ipl_team_logo/ipl_team_logo.js'
-         var popular_country_img=['Afg.webp','Aus.webp','Ban.webp','Eng.webp','Ind.webp','Ire.webp','New.webp','Pak.webp','Sco.webp','sou.webp','Sri.webp','Uni.webp','Wes.webp','Zim.webp']
-         var popular_country_name=['Afganistan','Australia','Bangaladesh',
-        'England','India','Ireland','New zealand','Pakistan','Scotland xi','South Africa','Sri lanka','United Arab Emirates','West Endies','Zimbambe']
-        var popular_womens_teams=['Bangladesh Women','Australia Women','Indian Women','New Zealand Women','Ireland Women','England Women'
-    ,'Pakistan Women','South Africa Women','Sri lanka women','West Indies Women']
-    var ipl_team2021=['Chhenai Superkings','Delhi Capitals','Kolkata Knight Riders','Mumbai Indians','Punjab Kings','Rajasthan Royals','Royal Challangers Bangolare'
-,'Sunrisers hydrabad']
-   var popular_womens_teams_sort= popular_womens_teams.sort()
-   popular_country_img.forEach((ele,index)=>{
-            var main=document.getElementById('after')
-            var div=document.createElement('div')
-            div.setAttribute('class','inner')
-            div.innerHTML=`
-            <img src=${`./image/country_imaages/`+image_arr[index]} alt="" srcset="" class="imgss">
-             <h2 class="country_name">${popular_country_name[index]}</h2>
+        import image_arr from './image/country_imaages/country_img.js';
+        import womens_team_logo from './image/womens_team_logo/womens_team_logo.js';
+        import ipl_team_logo from './image/ipl_team_logo/ipl_team_logo.js';
+        var popular_country_img=['Afg.webp','Aus.webp','Ban.webp','Eng.webp','Ind.webp','Ire.webp','New.webp','Pak.webp','Sco.webp','sou.webp','Sri.webp','Uni.webp','Wes.webp','Zim.webp'];
+        var popular_country_name=['Afganistan','Australia','Bangaladesh', 'England','India','Ireland','New zealand','Pakistan','Scotland xi','South Africa','Sri lanka','United Arab Emirates','West Endies','Zimbambe'];
+        var popular_womens_teams=['Bangladesh Women','Australia Women','Indian Women','New Zealand Women','Ireland Women','England Women' ,'Pakistan Women','South Africa Women','Sri lanka women','West Indies Women'];
+        var ipl_team2021=['Chhenai Superkings','Delhi Capitals','Kolkata Knight Riders','MumbaiIndians','Punjab Kings','Rajasthan Royals','Royal Challangers Bangolare' ,'Sunrisers hydrabad'];
+        var popular_womens_teams_sort= popular_womens_teams.sort();
+        popular_country_img.forEach((ele,index)=>{ var main=document.getElementById('after') ;
+        var div=document.createElement('div');
+        div.setAttribute('class','inner');
+        div.innerHTML=`
+        <img src=${`./image/country_imaages/`+image_arr[index]} alt="" srcset="" class="imgss">
+        <h2 class="country_name">${popular_country_name[index]}</h2>
 
-            `
-            main.append(div)
-        })
-        popular_womens_teams.forEach((ele,index)=>{
-            var womens_team_div=document.getElementById('womens_team')
-            var div=document.createElement('div')
-            div.setAttribute('class','inner')
-            div.innerHTML=`
-            <img src=${'./image/womens_team_logo/'+womens_team_logo[index]} alt="" srcset="" class="imgss">
-             <h2 class="country_name">${popular_womens_teams_sort[index]}</h2>
-            `
-            womens_team_div.append(div)
-        })
-        ipl_team2021.forEach((ele,index)=>{
-            var ipl_team_div=document.getElementById('ipl_team')
-            var div=document.createElement('div')
-            div.setAttribute('class','inner')
-            div.innerHTML=`
-            <img src=${'./image/ipl_team_logo/'+ipl_team_logo[index]} alt="" srcset="" class="imgss">
-             <h2 class="country_name">${ipl_team2021[index]}</h2>
-             
-            `
-            ipl_team_div.append(div)
-        })
-        
-        
+        ` 
+        main.append(div) });
+        popular_womens_teams.forEach((ele,index)=>{ var womens_team_div=document.getElementById('womens_team') 
+        var div=document.createElement('div') 
+        div.setAttribute('class','inner') 
+        div.innerHTML=`
+        <img src=${ './image/womens_team_logo/'+womens_team_logo[index]} alt="" srcset="" class="imgss">
+        <h2 class="country_name">${popular_womens_teams_sort[index]}</h2>
+        ` 
+        womens_team_div.append(div) }) 
+        ipl_team2021.forEach((ele,index)=>{ var ipl_team_div=document.getElementById('ipl_team') 
+        var div=document.createElement('div') 
+        div.setAttribute('class','inner') 
+        div.innerHTML=`
+        <img src=${ './image/ipl_team_logo/'+ipl_team_logo[index]} alt="" srcset="" class="imgss">
+        <h2 class="country_name">${ipl_team2021[index]}</h2>
+
+        ` 
+        ipl_team_div.append(div) })
+
+
     </script>
+    <script type="module" src="./main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
 </html>
