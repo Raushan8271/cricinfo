@@ -11,7 +11,7 @@ body{
     float: left;
     
 }
-#vertical{
+#vertical1{
     /* height: 300vh; */
     /* border: 1px solid black; */
           float: right;
@@ -23,7 +23,7 @@ body{
 
 
 }
-#vertical>a{
+#vertical1>a{
     margin: 20px 32px;
      border-radius: 15px; 
      text-decoration: none;
@@ -96,10 +96,13 @@ body{
  
 }
 #match_data1>div,#match_data2>div{
+
     width: 428px;
     height: 25vh;
     border: 0.00001rem solid rgb(233, 232, 232);
     float: left;
+    /* display: flex;
+    flex-wrap: wrap; */
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     font-size: 13px;
@@ -159,7 +162,7 @@ body{
 }
 
 
-#footer{
+#footer_new{
     width:1600px;
     margin-left: -1100px;
     height: 5vh;
@@ -167,14 +170,14 @@ body{
     padding: 20px 200px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#footer>a{
+#footer_new>a{
     float: left;
     margin: 8px;
     text-decoration: none;
     color: black;
     
 }
-#footer>a:hover{
+#footer_new>a:hover{
     color:#439ec9 !important;  ;
 }
 

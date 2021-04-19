@@ -42,3 +42,27 @@
      margin: auto;
      margin-left: 0px;
  }
+
+ .country_name a{
+      text-decoration: none;
+      color: black;
+ }
+
+ #footer_new{
+    width:1600px;
+    /* margin-left: -1100px; */
+    height: 5vh;
+    background-color: #F1F2F3;
+    padding: 20px 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footer_new>a{
+    float: left;
+    margin: 8px;
+    text-decoration: none;
+    color: black;
+    
+}
+#footer_new>a:hover{
+    color:#439ec9 !important;  ;
+}

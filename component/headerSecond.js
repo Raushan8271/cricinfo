@@ -8,7 +8,7 @@ export function headerSecond() {
     <div class="nav_li">
         <ul>
             <li>
-                <a href="#">Live Scores</a>
+                <a href="../live_score.html">Live Scores</a>
                 <ul>
                     <div class="dropdown">
                         <li><a href="">Live Scores Home</a></li>
@@ -20,7 +20,7 @@ export function headerSecond() {
                     </div>
                 </ul>
             </li>
-            <li><a href="#">Series</a>
+            <li><a href="../series.html">Series</a>
                 <ul>
                     <div class="dropdownbig">
                         <div class="dropdown">
