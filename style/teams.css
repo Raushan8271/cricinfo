@@ -43,6 +43,10 @@
      margin-left: 0px;
  }
 
+ .country_name a{
+      text-decoration: none;
+      color: black;
+ }
 
  #footer_new{
     width:1600px;
