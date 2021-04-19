@@ -38,13 +38,7 @@ async function score1() {
         teams1.innerHTML = team[1]
         let type1 = document.getElementById('type1')
         let date = data.provider.pubDate.split('T')
-        if (data.matchStarted == true) {
-            type1.innerHTML = "LIVE"
-            type1.style.color = "red"
-        }
-        else {
-            type1.innerHTML = date[0]
-        }
+        
 
         //console.log(date)
     } catch (e) {
@@ -65,13 +59,7 @@ async function score2() {
         teams2.innerHTML = team[1]
         let type2 = document.getElementById('type2')
         let date = data.provider.pubDate.split('T')
-        if (data.matchStarted == true) {
-            type2.innerHTML = "LIVE"
-            type2.style.color = "red"
-        }
-        else {
-            type2.innerHTML = date[0]
-        }
+        
         //console.log(date)
 
     } catch (e) {
@@ -79,3 +67,24 @@ async function score2() {
     }
 }
 score2()
+async function score3() {
+    try {
+        let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2&unique_id=1254069')
+        let data = await req.json()
+        //console.log(data)
+        let team = data.description.split('v')
+        //console.log(team)
+        let teamf2 = document.getElementById('teamf3')
+        teamf2.innerHTML = team[0]
+        let teams2 = document.getElementById('teams3')
+        teams2.innerHTML = team[1]
+        let type3 = document.getElementById('type3')
+        let date = data.provider.pubDate.split('T')
+        type3.innerHTML= date[0]
+        //console.log(date)
+
+    } catch (e) {
+        console.log(e)
+    }
+}
+score3()
