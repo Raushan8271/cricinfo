@@ -7,6 +7,10 @@ var arr = []
 let news1 = new News("../image/csk.jpg", "Chahar's 4 for 13 sets up big CSK win", "Punjab Kings never recovered after being 26 for 5 in the seventh over")
 let news2 = new News("../image/pak.jpg", "Nawaz drags stumbling Pakistan to series win", "Both teams suffered collapses, but South Africa's 145 target proved insufficient in fourth T20I")
 let news3 = new News("../image/319496.4.jpg", "Do players trust data insights? Not as much as analysts and coaches might want", "Cricketers are now incoreasingly exposed to numbers, but many factors still hold them back from wholehearted acceptance")
+
+
+
+arr = [news1, news2, news3]
 let news4 = new News("https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/319600/319631.6.jpg", "Maxwell, de Villiers make it three in three for RCB", "KKR lose steam as Siraj concedes just one run in the penultimate over")
 let news5 = new News("https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/233500/233595.12.jpg", "No. 6: Brendon McCullum's 158 not out vs the Royal Challengers Bangalore", "The best advertisement for IPL came in the very first game")
 let news6 = new News("https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/319600/319630.14.jpg", "de Villiers to discuss T20 WC comeback with Boucher", "Talks have already begun. and the two set to catch up again during the IPL")
@@ -33,5 +37,7 @@ arr.forEach(el => {
     </div>
 </div>`
 
+
+newsContent.appendChild(newsInner)
     newsContent.appendChild(newsInner)
 })
