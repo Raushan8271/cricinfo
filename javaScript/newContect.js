@@ -18,7 +18,7 @@ let news11 = new News("https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/l
 let news12 = new News("https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/319500/319550.jpg", "Babar hails 'complete team effort' after Pakistan seal ODI-T20I double", "'The way Fakhar performed stood out obviously. but I think we should pay creadit pay credit to the bowlers. too'")
 
 arr = [news1, news2, news3, news4, news5, news6, news7, news8, news9, news10, news11, news12]
-console.log(arr)
+//console.log(arr)
 //console.log(news1, news2, news3, news4, news5, news6, news7, news8)
 
 arr.forEach(el => {
