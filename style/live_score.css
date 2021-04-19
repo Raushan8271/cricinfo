@@ -11,7 +11,7 @@ body{
     float: left;
     
 }
-#vertical{
+#vertical1{
     /* height: 300vh; */
     /* border: 1px solid black; */
           float: right;
@@ -23,7 +23,7 @@ body{
 
 
 }
-#vertical>a{
+#vertical1>a{
     margin: 20px 32px;
      border-radius: 15px; 
      text-decoration: none;

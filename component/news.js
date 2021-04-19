@@ -9,6 +9,7 @@
    
 
   async function data(){
+    
       for( var i=1;i<=10;i++){
         var responce=await fetch(`https://www.espncricinfo.com/ci/content/story/data/index.json?;type=7;page=${i}`)
         var collect=await responce.json()
