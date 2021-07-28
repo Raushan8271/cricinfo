@@ -21,15 +21,12 @@
         <div id="ipl_team"></div>
     </div>
     <script type="module">
-        import image_arr from './images/country_imaages/country_img.js'
-     //   console.log(image_arr)
-        import womens_team_logo from './images/womens_team_logo/womens_team_logo.js'
-            // <img src=${popular_country_img[index]} alt="" srcset="" class="imgss"> <h2 class="country_name">${popular_country_name[index]}</h2>
-           // <img src=${'/images/country_imaages/'+image_arr[index]}alt="" srcset="" class="imgss">
-           //  <h2 class="country_name">${popular_womens_teams[index]}</h2>
-       // console.log(womens_team_logo)
-       import ipl_team_logo from './images/ipl_team_logo/ipl_team_logo.js'
-         var popular_country_img=['./images/country_imaages/Afg.webp','Aus.webp','Ban.webp','Eng.webp','Ind.webp','Ire.webp','New.webp','Pak.webp','Sco.webp','sou.webp','Sri.webp','Uni.webp','Wes.webp','Zim.webp']
+        import image_arr from './image/country_imaages/country_img.js'
+   
+        import womens_team_logo from './image/womens_team_logo/womens_team_logo.js'
+            
+       import ipl_team_logo from './image/ipl_team_logo/ipl_team_logo.js'
+         var popular_country_img=['Afg.webp','Aus.webp','Ban.webp','Eng.webp','Ind.webp','Ire.webp','New.webp','Pak.webp','Sco.webp','sou.webp','Sri.webp','Uni.webp','Wes.webp','Zim.webp']
          var popular_country_name=['Afganistan','Australia','Bangaladesh',
         'England','India','Ireland','New zealand','Pakistan','Scotland xi','South Africa','Sri lanka','United Arab Emirates','West Endies','Zimbambe']
         var popular_womens_teams=['Bangladesh Women','Australia Women','Indian Women','New Zealand Women','Ireland Women','England Women'
@@ -37,12 +34,12 @@
     var ipl_team2021=['Chhenai Superkings','Delhi Capitals','Kolkata Knight Riders','Mumbai Indians','Punjab Kings','Rajasthan Royals','Royal Challangers Bangolare'
 ,'Sunrisers hydrabad']
    var popular_womens_teams_sort= popular_womens_teams.sort()
-        popular_country_img.forEach((ele,index)=>{
+   popular_country_img.forEach((ele,index)=>{
             var main=document.getElementById('after')
             var div=document.createElement('div')
             div.setAttribute('class','inner')
             div.innerHTML=`
-            <img src=${'/images/country_imaages/'+image_arr[index]} alt="" srcset="" class="imgss">
+            <img src=${`./image/country_imaages/`+image_arr[index]} alt="" srcset="" class="imgss">
              <h2 class="country_name">${popular_country_name[index]}</h2>
 
             `
@@ -53,7 +50,7 @@
             var div=document.createElement('div')
             div.setAttribute('class','inner')
             div.innerHTML=`
-            <img src=${'/images/womens_team_logo/'+womens_team_logo[index]} alt="" srcset="" class="imgss">
+            <img src=${'./image/womens_team_logo/'+womens_team_logo[index]} alt="" srcset="" class="imgss">
              <h2 class="country_name">${popular_womens_teams_sort[index]}</h2>
             `
             womens_team_div.append(div)
@@ -63,7 +60,7 @@
             var div=document.createElement('div')
             div.setAttribute('class','inner')
             div.innerHTML=`
-            <img src=${'/images/ipl_team_logo/'+ipl_team_logo[index]} alt="" srcset="" class="imgss">
+            <img src=${'./image/ipl_team_logo/'+ipl_team_logo[index]} alt="" srcset="" class="imgss">
              <h2 class="country_name">${ipl_team2021[index]}</h2>
              
             `
