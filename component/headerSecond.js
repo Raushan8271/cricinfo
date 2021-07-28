@@ -3,12 +3,12 @@ export function headerSecond() {
     div.setAttribute('id', 'headerSecond')
     div.innerHTML = ` <div id="headerSecond">
     <div style="width: 20%">
-        <a id="logolink" href="./index.html"><img style="width: 140px;height: 20px;padding: 12px 0px 10px 50%;color:white;" src="https://wassets.hscicdn.com/static/images/logo.png" alt=""></a>
+        <a id="logolink" href="./index.html"><img style="width: 140px;height: 20px;padding: 12px 0px 10px 35%;color:white;" src="https://wassets.hscicdn.com/static/images/logo.png" alt=""></a>
     </div>
     <div class="nav_li">
         <ul>
             <li>
-                <a href="#">Live Scores</a>
+                <a href="../live_score.html">Live Scores</a>
                 <ul>
                     <div class="dropdown">
                         <li><a href="">Live Scores Home</a></li>
@@ -20,7 +20,7 @@ export function headerSecond() {
                     </div>
                 </ul>
             </li>
-            <li><a href="#">Series</a>
+            <li><a href="../series.html">Series</a>
                 <ul>
                     <div class="dropdownbig">
                         <div class="dropdown">
@@ -47,7 +47,7 @@ export function headerSecond() {
                     </div>
                 </ul>
             </li>
-            <li><a href="#">Teams</a>
+            <li><a href="./../project.html">Teams</a>
                 <ul>
                     <div style="display: flex;width: 350px;">
                         <div class="dropdownteam">
@@ -77,7 +77,7 @@ export function headerSecond() {
                     </div>
                 </ul>
             </li>
-            <li><a href="#">News</a>
+            <li><a href="./../news.html">News</a>
                 <ul>
                     <div class="dropdown">
                         <li><a href="">News Home</a></li>
