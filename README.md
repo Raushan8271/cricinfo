@@ -1,7 +1,7 @@
 # cricinfo
 It is clone of cricinfo.com. A website where user can see live score as well as result of completed match.User can see daily national and international news here also they can filter it using search bar as well as filter with dates.User can see some stats related to player like runs,avarage of player,ranking etc.
 
-# Tech task use:
+# Tech Stack use:
 <li> HTML
 </li>
 <li> CSS</li>
