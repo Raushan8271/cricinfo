@@ -19,13 +19,13 @@ It is clone of cricinfo.com. A website where user can see live score as well as 
 
 # Team members and Work:
 ## Raushan Kumar:
- <li>Built whole landing page</li><br/>
+ <li>Work on whole landing page</li><br/>
  
  ## Keshav Babu:
- <li>Built Team page</li><br/>
+ <li>Work on Team page</li><br/>
  
  ## Syed yaseen:
- <li>Built Series page</li><br/>
+ <li>Work on Series page</li><br/>
  
  ## Jayesh Kale:
- <li>Built Live score page and news page</li><br/>
+ <li>Wrok on Live score page and news page</li><br/>
