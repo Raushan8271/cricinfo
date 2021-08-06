@@ -14,8 +14,9 @@ It is clone of cricinfo.com. A website where user can see live score as well as 
  
  
 ## some snapshot of project 
+![home](https://user-images.githubusercontent.com/36612181/128462263-b2b62d6a-7e79-47c2-bb35-d48eaea5e837.jpg)
+![home2](https://user-images.githubusercontent.com/36612181/128462360-b8708e75-be04-42d5-9eeb-f193b1c56d3f.jpg)
 
-![cricinfo](https://user-images.githubusercontent.com/36612181/128312537-5c61ac6c-84ab-4940-bb20-9347b4914ee2.png)
 
 # Team members and Work:
 ## Raushan Kumar:
