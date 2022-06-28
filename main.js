@@ -69,7 +69,7 @@ async function score2() {
 score2()
 async function score3() {
     try {
-        let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2&unique_id=1254069')
+        let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=&unique_id=1254069')
         let data = await req.json()
         //console.log(data)
         let team = data.description.split('v')
