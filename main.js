@@ -11,7 +11,7 @@ document.getElementById('footer').append(footer())
 
 async function score() {
     try {
-        let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2&unique_id=1254066')
+        let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=&unique_id=1254066')
         let data = await req.json()
         console.log(data)
         let team = data.description.split('v')
@@ -27,7 +27,7 @@ async function score() {
 score()
 async function score1() {
     try {
-        let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2&unique_id=1254067')
+        let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=&unique_id=1254067')
         let data = await req.json()
         //console.log(data)
         let team = data.description.split('v')
@@ -48,7 +48,7 @@ async function score1() {
 score1()
 async function score2() {
     try {
-        let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=StC74k5A68dv1fOjQvPXJDVGkeS2&unique_id=1254068')
+        let req = await fetch('https://cricapi.com/api/cricketScore/?apikey=&unique_id=1254068')
         let data = await req.json()
         //console.log(data)
         let team = data.description.split('v')
